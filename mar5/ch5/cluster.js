@@ -1,6 +1,6 @@
 const cluster = require('cluster');
 const http = require('http');
-const numCPUs = require('os').cpus().length;
+const numCPUs = require('os').cpus().length; //cpus.length는 cqu 갯수
 
 if (cluster.isMaster) {
   console.log(`마스터 프로세스 아이디: ${process.pid}`);
